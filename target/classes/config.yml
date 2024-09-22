@@ -1,0 +1,58 @@
+# SimpleTeleport Configuration
+
+# Delays (in seconds) before teleportation occurs
+delays:
+  home: 3
+  spawn: 2
+  warp: 3
+  tpa: 5
+
+# Cooldowns (in seconds) between uses of commands
+cooldowns:
+  home: 60
+  spawn: 30
+  warp: 60
+  tpa: 120
+
+# Maximum number of homes a player can set
+max-homes: 3
+
+# Maximum number of warps that can be created
+max-warps: 10
+
+# Time in seconds before a TPA request expires
+tpa-request-expiry: 60
+
+# Messages
+messages:
+  prefix: "&7[&bSimpleTeleport&7] "
+  teleport-starting: "%prefix%&aTeleporting in %time% seconds. Don't move!"
+  teleport-cancelled: "%prefix%&cTeleportation cancelled due to movement."
+  teleport-success: "%prefix%&aTeleported successfully!"
+  cooldown: "%prefix%&cYou must wait %time% before using this command again."
+  no-permission: "%prefix%&cYou don't have permission to do that."
+  
+  home-set: "%prefix%&aHome set successfully!"
+  home-teleport: "%prefix%&aTeleporting to home..."
+  home-not-set: "%prefix%&cYou haven't set a home yet."
+  home-limit-reached: "%prefix%&cYou've reached the maximum number of homes."
+  
+  spawn-set: "%prefix%&aSpawn point set successfully!"
+  spawn-teleport: "%prefix%&aTeleporting to spawn..."
+  
+  warp-set: "%prefix%&aWarp '%warp%' set successfully!"
+  warp-teleport: "%prefix%&aTeleporting to warp '%warp%'..."
+  warp-not-found: "%prefix%&cWarp not found."
+  warp-limit-reached: "%prefix%&cThe maximum number of warps has been reached."
+  
+  tpa-sent: "%prefix%&aTeleport request sent to %player%."
+  tpa-received: "%prefix%&a%player% has requested to teleport to you. Use /tpaccept or /tpdeny."
+  tpahere-sent: "%prefix%&aTeleport request sent to %player% to come to you."
+  tpahere-received: "%prefix%&a%player% has requested you to teleport to them. Use /tpaccept or /tpdeny."
+  tpa-accepted: "%prefix%&aTeleport request accepted."
+  tpa-denied: "%prefix%&cTeleport request denied."
+  tpa-no-request: "%prefix%&cYou don't have any pending teleport requests."
+  tpa-expired: "%prefix%&cThe teleport request has expired."
+  
+  player-not-found: "%prefix%&cPlayer not found."
+  player-offline: "%prefix%&cThat player is offline."
